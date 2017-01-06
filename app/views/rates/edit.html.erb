@@ -1,0 +1,37 @@
+<div class="body">
+
+<%= form_for @rate do |f| %>
+Loan Type: <%= f.select(:loan_type, [
+  ["Conforming", "Conforming"],
+  ["High Balance Conforming", "High Balance Conforming"],
+  ["Jumbo", "Jumbo"]])%>
+  <br><br>
+    <%= f.radio_button(:length, "15 Year Fixed") %>
+    <%= label_tag(:length_15_year, "15 Year Fixed") %>
+    <br>
+    <%= f.radio_button(:length, "30 Year Fixed") %>
+    <%= label_tag(:length_30_year, "30 Year Fixed") %>
+    <br>
+    <%= f.radio_button(:length, "5 Year Arm") %>
+    <%= label_tag(:length_5_year_arm, "5 Year Arm") %>
+    <br>
+    <%= f.radio_button(:length, "7 Year Arm") %>
+    <%= label_tag(:length_7_year_arm, "7 Year Arm") %>
+    <br>
+    <%= f.radio_button(:length, "10 Year Arm") %>
+    <%= label_tag(:length_10_year_arm, "10 Year Arm") %>
+  <br><br>
+  <%= f.label :rate %>
+  <%= f.text_field :rate %>
+  <br><br>
+  <%= f.label :apr %>
+  <%= f.text_field :apr %>
+  <br><br>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br><br>
+
+  <%= f.submit %>
+<% end %>
+
+</div>

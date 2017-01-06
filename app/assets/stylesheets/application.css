@@ -1,0 +1,104 @@
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+
+ body{
+   background-image: url("door_key.jpeg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: Helvetica;
+   color: RGBA(89, 89, 89, 1.00);
+   margin-bottom: 30px;
+   height: 100vh;
+   border:2px solid red;
+ }
+
+ button{
+   padding: 5px 16px;
+   margin: 10px;
+   font-size: 14px;
+   background-color: #98C06D;
+   border-radius: 5px;
+   position: relative;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+ }
+
+ a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+ }
+
+ .holder{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+.box{
+  background-color: rgba(255, 255, 255, .6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+div.body{
+  width:450px;
+  min-height:10%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .8);
+  display:table-cell;
+  display:flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content:center;
+  position:relative;
+  overflow: visible;
+}
+
+footer{
+  border:2px solid green;
+
+}
+
+nav {
+  float: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+  width: 80%;
+  background: RGBA(142, 142, 142, .5);
+}
+
+nav > a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+padding: 4px 20px 4px 20px;
+border: 6px solid transparent;
+}
+
+nav > a:hover{
+ background: #595959;
+}

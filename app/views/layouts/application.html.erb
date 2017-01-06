@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Perfect Borrower</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/rates">Daily Rates</a>
+    </nav>
+
+    <%= yield %>
+
+      <footer>
+        <p>(c) The Perfect Borrower 2016</p>
+      </footer>
+  </body>
+</html>

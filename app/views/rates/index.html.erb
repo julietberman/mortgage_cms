@@ -1,0 +1,20 @@
+<h1>The Perfect Borrower - Daily Deals</h1>
+<button><%= link_to "Add New Deal", new_rate_path %></button>
+
+<div class="holder">
+  <% @rates.each do |rate| %>
+    <div class="box">
+      <h2><%= link_to rate.loan_type, rate_path(rate) %></h2>
+      <p><%= rate.length%></p>
+      <p><%= rate.apr%></p>
+      <p><%= rate.rate%></p>
+      <p><%= rate.description%></p>
+      <div>
+        <button><%= link_to 'Remove', rate_path(rate),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></button>
+        <button><%= link_to 'Edit', edit_rate_url(rate)%></button>
+      </div>
+    </div>
+  <% end %>
+</div>
