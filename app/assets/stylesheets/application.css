@@ -17,10 +17,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
    justify-content: center;
    align-items: center;
    font-family: Helvetica;
-   color: RGBA(89, 89, 89, 1.00);
+   color: RGBA(77, 77, 77, 1.00);
    margin-bottom: 30px;
-   height: 100vh;
-   border:2px solid red;
+   height: 100%;
  }
 
  button{
@@ -35,9 +34,29 @@ form,fieldset,input,textarea,p,blockquote,th,td {
    text-decoration: none;
  }
 
- a{
+ button.add{
+   padding: 8px 20px;
+   margin: 10px;
+   font-size: 18px;
+   background-color: RGBA(77, 77, 77, .8);
+   border-radius: 5px;
+   position: relative;
+   display: inline-block;
+   color: white;
+ }
+
+ button:hover{
+  background-color: RGBA(126, 170, 97, 1.00);
+ }
+
+ button.add:hover{
+   background-color: RGBA(77, 77, 77, 1.00);
+ }
+
+
+ button > a{
    text-decoration: none;
-   color: black;
+   color: white;
    font-weight: bold;
  }
 
@@ -77,8 +96,17 @@ div.body{
 }
 
 footer{
-  border:2px solid green;
-
+   position:fixed;
+   height:40px;
+   background-color: RGBA(77, 77, 77, 1.0);
+   bottom:0px;
+   left:0px;
+   right:0px;
+   margin-bottom:0px;
+   display: flex;
+   align-items: center;
+   color: white;
+   padding-left: 20px;
 }
 
 nav {
@@ -88,7 +116,7 @@ nav {
   justify-content: center;
   margin: 20px 0;
   width: 80%;
-  background: RGBA(142, 142, 142, .5);
+  background: RGBA(77, 77, 77, .8);
 }
 
 nav > a {
@@ -100,5 +128,18 @@ border: 6px solid transparent;
 }
 
 nav > a:hover{
- background: #595959;
+ background: RGBA(77, 77, 77, 1.00);
+}
+
+img.logo{
+  margin-top: 20px;
+  max-height: 100px;
+  transition: all .5s ease-in-out;
+}
+
+img.logo:hover{
+  transform: scale(1.1);
+}
+.top{
+  text-align: center;
 }

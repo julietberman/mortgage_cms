@@ -1,10 +1,11 @@
-<h1>The Perfect Borrower - Daily Deals</h1>
-<button><%= link_to "Add New Deal", new_rate_path %></button>
-
+<div class="top">
+  <h1>Daily Deals</h1>
+  <button class="add"><%= link_to "Add New Deal (+)", new_rate_path %></button>
+</div>
 <div class="holder">
   <% @rates.each do |rate| %>
     <div class="box">
-      <h2><%= link_to rate.loan_type, rate_path(rate) %></h2>
+      <h2><%= rate.loan_type %></h2>
       <p><%= rate.length%></p>
       <p><%= rate.apr%></p>
       <p><%= rate.rate%></p>
